@@ -1,5 +1,6 @@
 package com.example.spring20230920.controller;
 
+import com.example.spring20230920.domain.Person;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,5 +22,12 @@ public class Controller8 {
     public void method2(Model model) {
         model.addAttribute("propone","😘");
         model.addAttribute("propTwo","😒");
+    }
+
+    @RequestMapping("sub3")
+    public void method3(Person person, Model model) {
+        person.setAge(22);
+        model.addAttribute("nana", "강정");
+        model.addAttribute("person", person); // person객체를 jsp에서 사용할 수 있게 추가
     }
 }
