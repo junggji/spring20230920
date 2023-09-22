@@ -12,6 +12,7 @@
 </head>
 <body>
 
+<%--Map에서 value값을 얻을때~~--%>
 <h2>${phones.phone1}</h2>
 <h2>${phones["phone2"]}</h2>
 <h2>${caps.korea}</h2>
