@@ -42,3 +42,4 @@ SELECT CategoryName
 FROM categories
 WHERE CategoryID = 2;
 
+

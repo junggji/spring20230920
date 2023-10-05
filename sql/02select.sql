@@ -2,7 +2,7 @@
 -- tuple, 행, row
 -- field, attribute, 열
 SELECT * FROM w3schools.customers;
-SELECT *FROM w3schools.employees;
+SELECT * FROM w3schools.employees;
 SELECT * FROM w3schools.products;
 
 SELECT * FROM categories;
@@ -12,8 +12,8 @@ SELECT * FROM suppliers;
 SELECT * FROM shippers;
 
  --
- SELECT CustomerName -- column 명 나열
- FROM customers; -- table 명 나열
+SELECT CustomerName -- column 명 나열
+FROM customers; -- table 명 나열
 
 SELECT CustomerID, CustomerName
 FROM customers;
@@ -65,3 +65,6 @@ SELECT COUNT(*) FROM orders;
 SELECT COUNT(*) FROM categories;
 -- 예) 고객이 있는 도시의 수
 SELECT COUNT(DISTINCT City) FROM customers;
+
+
+SELECT City FROM customers WHERE City ='london' or City = 'berlin';
