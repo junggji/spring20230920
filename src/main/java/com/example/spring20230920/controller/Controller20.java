@@ -273,9 +273,9 @@ public class Controller20 {
     }
 
     @GetMapping("sub11")
-    // RequestParam "~~" 은 넘어오는jsp(sub10)의 name과 맞춰줘야한다.
+    // RequestParam "~~" 은 ***넘어오는***jsp(sub10)의 name들과 맞춰줘야한다.
     public String method11(@RequestParam("country") List<String> nlist, Model model) throws Exception {
-        // IN을 쓰기 위해서 parameter갯수와 ? 갯수 맞춰주기
+        // IN을 쓰기 위해서 parameter갯수와 ? 갯수를 맞춰주기
                 String questionmarks ="";
          // ?의 갯수는 nlist size와 똑같다
                 for(int i = 0; i<nlist.size(); i++) {
