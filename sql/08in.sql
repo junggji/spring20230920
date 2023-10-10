@@ -3,7 +3,7 @@
 SELECT * FROM customers
 WHERE Country = 'UK' OR Country = 'spain' OR Country = 'italy';
 SELECT * FROM customers
-WHERE Country IN ('uk', 'spain', 'taly');
+WHERE Country IN ('uk', 'spain', 'italy');
 
 -- 예) 카테고리3, 4에 속한 상품들
 SELECT * FROM categories
