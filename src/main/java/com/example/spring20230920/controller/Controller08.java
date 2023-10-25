@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequestMapping("main8")
-public class Controller8 {
+public class Controller08 {
 
     @RequestMapping("sub1")
     public void method1(Model model) {
